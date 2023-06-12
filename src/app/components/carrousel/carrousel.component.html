@@ -1,0 +1,32 @@
+<div [id]="'genhreCarousel-'+ genhre " class="carousel slide genhreCarousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let a of getFirstThree()">
+          <app-card [anime]="a"></app-card>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item" *ngFor="let os of getOthers()">
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let a of os">
+          <app-card [anime]="a"></app-card>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#genhreCarousel-' + genhre"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#genhreCarousel-' + genhre"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

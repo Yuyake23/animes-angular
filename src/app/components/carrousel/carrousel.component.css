@@ -1,0 +1,13 @@
+.genhreCarousel {
+    padding-inline: 16%;
+}
+
+button {
+    background-color: lightgray;
+    width: 50px;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
